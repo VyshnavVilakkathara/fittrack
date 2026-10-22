@@ -1,0 +1,274 @@
+
+:root {
+  --lime: #c6f36b;
+  --dark: #151a16;
+  --muted: #687168;
+  --light-bg: #f6f8f4;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.brand-mark,
+.auth-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--lime);
+  color: var(--dark);
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+}
+
+.btn-lime {
+  background: var(--lime);
+  color: var(--dark);
+  border: 1px solid var(--lime);
+  font-weight: 700;
+}
+
+.btn-lime:hover {
+  background: #b5e455;
+  border-color: #b5e455;
+  color: var(--dark);
+}
+
+.hero {
+  background: var(--dark);
+  color: white;
+  padding: 80px 0;
+}
+
+.eyebrow {
+  color: #77a92d;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+  color: var(--lime);
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: var(--lime);
+}
+
+.hero-text {
+  color: #c4ccc3;
+  max-width: 480px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: 20px;
+  left: -15px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: white;
+  color: var(--dark);
+  padding: 16px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px #0002;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  background: #71bd35;
+  border-radius: 50%;
+}
+
+.stat-label {
+  color: #c4ccc3;
+  font-size: 0.85rem;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h2,
+.about-section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.section-heading > p:last-child {
+  color: var(--muted);
+}
+
+.workout-card {
+  border: 1px solid #e6eae3;
+  border-radius: 18px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.workout-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px #17201712;
+}
+
+.workout-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.workout-card p {
+  color: var(--muted);
+  min-height: 48px;
+}
+
+.workout-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #476b1d;
+  background: #eef8dc;
+  padding: 6px 10px;
+  border-radius: 30px;
+}
+
+.about-section {
+  background: var(--light-bg);
+}
+
+.about-text {
+  color: var(--muted);
+  max-width: 600px;
+  line-height: 1.8;
+  margin: 18px auto 25px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--lime);
+}
+
+/* Login and signup pages */
+
+.auth-page {
+  background: var(--light-bg);
+  min-height: 100vh;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 16px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 36px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px #1720170d;
+}
+
+.auth-icon {
+  width: 55px;
+  height: 55px;
+  font-size: 1.6rem;
+  border-radius: 16px;
+}
+
+.auth-card .form-label {
+  font-weight: 600;
+}
+
+.auth-card .form-control {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-color: #dce2d9;
+}
+
+.auth-card .form-control:focus {
+  border-color: #80a943;
+  box-shadow: 0 0 0 0.2rem #c6f36b55;
+}
+
+.auth-link {
+  color: #4d761e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+#loginMessage,
+#signupMessage {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 55px 0;
+  }
+
+  .hero-image img {
+    height: 300px;
+  }
+
+  .floating-card {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .section-padding {
+    padding: 55px 0;
+  }
+
+  .auth-card {
+    padding: 26px 20px;
+  }
+}
